@@ -1,0 +1,9 @@
+.paginationContainer {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.paginationContainer span {
+    margin-left: 5px;
+    background-color: wheat;
+}
