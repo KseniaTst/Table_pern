@@ -10,7 +10,8 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
-    /*background-color: #dce9f9;*/
+    font-size: 20px;
+    font-weight: 400;
     background: linear-gradient(to top,  #230609 -41% ,#cc1d22f5 83%);
     border-right: none;
 }
