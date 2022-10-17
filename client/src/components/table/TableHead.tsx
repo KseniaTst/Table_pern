@@ -40,20 +40,18 @@ export const TableHead = ({setRows}: PropsType) => {
     return (
         <div className={styles.headerContainer}>
             <div><span>Дата</span></div>
-            <div>
+            <div onClick={() => onNameSortHandler('name')}>
                 <span>Название</span>
-                <span className={sort && sortedGroup === 'name' ? styles.sortSpanDesc : styles.sortSpanAsc}
-                      onClick={() => onNameSortHandler('name')}/>
+                <span className={sort && sortedGroup === 'name' ? styles.sortSpanDesc : styles.sortSpanAsc} />
             </div>
-            <div>
+            <div onClick={() => onQuantitySortHandle('quantity')}>
                 <span>Количесво</span>
-                <span className={sort && sortedGroup === 'quantity' ? styles.sortSpanDesc : styles.sortSpanAsc}
-                      onClick={() => onQuantitySortHandle('quantity')}/>
+                <span className={sort && sortedGroup === 'quantity' ? styles.sortSpanDesc : styles.sortSpanAsc} />
             </div>
-            <div className={styles.headerDistance}>
+            <div className={styles.headerDistance}
+                 onClick={() => onDistanceSortHandle('distance')}>
                 <span>Расстояние</span>
-                <span className={sort && sortedGroup === 'distance' ? styles.sortSpanDesc : styles.sortSpanAsc}
-                      onClick={() => onDistanceSortHandle('distance')}/>
+                <span className={sort && sortedGroup === 'distance' ? styles.sortSpanDesc : styles.sortSpanAsc} />
             </div>
         </div>
     )
